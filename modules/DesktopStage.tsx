@@ -50,7 +50,7 @@ export default function DesktopStage() {
         <Economy style={{ ...place({ x: 1840, y: 1534, w: 343 }), ...type(27, 32) }} />
 
         {PLATFORMS.map(({ label, href, icon, iconBox, labelX }) => (
-          <a key={label} href={href} {...linkTarget(href)} aria-label={label === "github" ? "EBTS on GitHub" : `Download for ${label}`} className="group flex absolute inset-0 pointer-events-none">
+          <a key={label} href={href} {...linkTarget(href)} aria-label={label === "github" ? "EBTS on GitHub" : label === "mac" ? "Download for macOS (Apple Silicon)" : `Download for ${label}`} className="group flex absolute inset-0 pointer-events-none">
             <div
               className="flex relative pointer-events-auto transition-transform duration-200 group-hover:-translate-y-[calc(var(--u)*4)]"
               style={place({ x: iconBox[0], y: iconBox[1], w: iconBox[2], h: iconBox[3] })}

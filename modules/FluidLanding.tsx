@@ -78,7 +78,7 @@ export default function FluidLanding() {
         <Economy className="text-[22px] leading-[1.2] max-w-[17rem] sm:text-2xl sm:max-w-[20rem]" />
         <nav className="flex relative flex-row flex-wrap gap-x-5 gap-y-4 sm:gap-x-6">
           {PLATFORMS.map(({ label, href, icon }) => (
-            <a key={label} href={href} {...linkTarget(href)} aria-label={label === "github" ? "EBTS on GitHub" : `Download for ${label}`} className="group flex relative flex-col items-center gap-1">
+            <a key={label} href={href} {...linkTarget(href)} aria-label={label === "github" ? "EBTS on GitHub" : label === "mac" ? "Download for macOS (Apple Silicon)" : `Download for ${label}`} className="group flex relative flex-col items-center gap-1">
               <div className="flex relative w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-200 group-hover:-translate-y-1">
                 <Image src={icon} alt="" fill sizes="56px" draggable={false} className="object-contain select-none" />
               </div>
