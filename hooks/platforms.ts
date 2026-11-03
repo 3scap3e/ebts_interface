@@ -1,6 +1,6 @@
 import type { PlatformLink } from "@/types/landing";
 
-const RELEASE_URL = "https://github.com/3scap3e/ebts/releases/download/untagged-1b0a86f23782e23d25e5";
+const RELEASE_URL = "https://github.com/3scap3e/ebts/releases/latest/download";
 
 export const PLATFORMS: PlatformLink[] = [
   { label: "mac", href: `${RELEASE_URL}/ebts_0.1.0_aarch64.dmg`, icon: "/images/mac.png", iconBox: [2256, 1536, 64, 64], labelX: 2272 },
